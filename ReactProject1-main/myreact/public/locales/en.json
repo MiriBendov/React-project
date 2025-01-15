@@ -1,14 +1,14 @@
 {
     "about":{
-        "about.title": "bla bla bla........."
+        "title": "bla bla bla........."
     },
     "home":{
-        "home_welcome.title": "Welcome to TechFlow"
+        "title": "Welcome to TechFlow"
     },
     "service":{
-        "service.title": "👍👍👍👍👍👍"
+        "title": "👍👍👍👍👍👍"
     },
     "contact":{
-        "contact.title": "phon number 0556709743"
+        "title": "phone number 0556709743"
     }
 }

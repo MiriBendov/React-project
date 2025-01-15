@@ -1,15 +1,15 @@
 {
     "about":{
-        "about.title": "בלה בלה בלה בלה....."
+        "title": "בלה בלה בלה בלה....."
     },
-    "home":{
-        "home_welcome.title": "ברוכים הבאים ל-TechFlow"
+    "home": {
+        "title": "ברוכים הבאים ל-TechFlow"        
     },
     "service":{
-        "service.title": "👍👍👍👍👍👍"
+        "title": "👍👍👍👍👍👍"
     },
     "contact":{
-        "contact.title": "מספר טלפון 0556709743"
+        "title": "מספר טלפון 0556709743"
     }
 }
   

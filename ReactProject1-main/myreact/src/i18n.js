@@ -11,7 +11,7 @@ i18n
       escapeValue: false // לא נחוץ ב-React
     },
     backend: {
-      loadPath: '\locales\{{lng}}.json', // מיקום קובץ ה-JSON
-    }
+      loadPath: '/locales/{{lng}}.json', // Adjusted to remove 'public',
+    },
   });
 export default i18n;

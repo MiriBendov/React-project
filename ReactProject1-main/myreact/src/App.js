@@ -8,7 +8,10 @@ import Contact from './lesson4/component/contact';
 import Service from './lesson4/component/service';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import MyComponent from './Lesson2/lesson2_img';
-
+import i18n from 'i18next';
+import './i18n';
+import { I18nextProvider } from 'react-i18next';
+import 'bootstrap/dist/css/bootstrap.min.css';
 // function App() {
 //   return (
 //     <div className="App">
@@ -34,8 +37,15 @@ import MyComponent from './Lesson2/lesson2_img';
 // export default App;
 
 function App(){
+  const he=()=>{
+    i18n.changeLanguage('he');
+  }
+  const en=()=>{
+    i18n.changeLanguage('en');
+  }
   return(
-    <>
+    <> 
+    <I18nextProvider> 
     <BrowserRouter>
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
       <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" to="/">Home</Link>|
@@ -50,9 +60,11 @@ function App(){
       <Route path="/service" element={<Service/>}/>
     </Routes>
     </BrowserRouter>
-    
-    <button>english</button>
-    <button>עברית</button>
+    </I18nextProvider>
+    <div class="btn-group">
+    <button class="btn btn-primary" onClick={en}>english</button>
+    <button class="btn btn-primary" onClick={he}>עברית</button>
+    </div>
     </>
   );
 }

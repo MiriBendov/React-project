@@ -5,7 +5,8 @@ function Home() {
   const { t } = useTranslation(); // מחזיר את פונקציית t
 
   return (
-    <h1>{t('home_welcome.title')}</h1> // משתמש במפתח home_welcome כדי להחזיר את התרגום המתאים
+    <h1>{t('home.title')}</h1> // משתמש במפתח home כדי להחזיר את התרגום המתאים
+    
   );
 }
 
