@@ -1,15 +1,19 @@
 {
     "about":{
-        "title": "בלה בלה בלה בלה....."
+        "title": "בלה בלה בלה בלה.....",
+        "link":"אודות"
     },
     "home": {
-        "title": "ברוכים הבאים ל-TechFlow"        
+        "title": "ברוכים הבאים ל-TechFlow",
+        "link":"בית"        
     },
     "service":{
-        "title": "👍👍👍👍👍👍"
+        "title": "👍👍👍👍👍👍",
+        "link":"שירות"
     },
     "contact":{
-        "title": "מספר טלפון 0556709743"
+        "title": "מספר טלפון 0556709743",
+        "link": "יצירת קשר"
     }
 }
   

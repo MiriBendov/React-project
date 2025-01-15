@@ -1,14 +1,18 @@
 {
     "about":{
-        "title": "bla bla bla........."
+        "title": "bla bla bla.........",
+        "link":"About"
     },
     "home":{
-        "title": "Welcome to TechFlow"
+        "title": "Welcome to TechFlow",
+        "link":"Home"
     },
     "service":{
-        "title": "👍👍👍👍👍👍"
+        "title": "👍👍👍👍👍👍",
+        "link":"Service"
     },
     "contact":{
-        "title": "phone number 0556709743"
+        "title": "phone number 0556709743",
+        "link":"Contact"
     }
 }

@@ -12,6 +12,8 @@ import i18n from 'i18next';
 import './i18n';
 import { I18nextProvider } from 'react-i18next';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 // function App() {
 //   return (
 //     <div className="App">
@@ -43,15 +45,16 @@ function App(){
   const en=()=>{
     i18n.changeLanguage('en');
   }
+  const {t}=useTranslation();
   return(
     <> 
     <I18nextProvider> 
     <BrowserRouter>
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-      <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" to="/">Home</Link>|
-      <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" to="/about">About</Link>|
-      <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" to="/contact">Contact</Link>|
-      <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" to="/service">Service</Link>
+      <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" to="/">{t('home.link')}</Link>|
+      <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" to="/about">{t('about.link')}</Link>|
+      <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" to="/contact">{t('contact.link')}</Link>|
+      <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" to="/service">{t('service.link')}</Link>
     </nav>
     <Routes>
       <Route path="/" element={<Home/>}/>
