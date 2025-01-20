@@ -47,14 +47,14 @@ function App(){
   }
   const {t}=useTranslation();
   return(
-    <> 
+    <div className='b'> 
     <I18nextProvider> 
     <BrowserRouter>
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-      <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" to="/">{t('home.link')}</Link>|
-      <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" to="/about">{t('about.link')}</Link>|
-      <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" to="/contact">{t('contact.link')}</Link>|
-      <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" to="/service">{t('service.link')}</Link>
+      <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover link1" to="/">{t('home.link')}</Link>|
+      <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover link1" to="/about">{t('about.link')}</Link>|
+      <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover link1" to="/contact">{t('contact.link')}</Link>|
+      <Link class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover link1" to="/service">{t('service.link')}</Link>
     </nav>
     <Routes>
       <Route path="/" element={<Home/>}/>
@@ -65,10 +65,10 @@ function App(){
     </BrowserRouter>
     </I18nextProvider>
     <div class="btn-group">
-    <button class="btn btn-primary" onClick={en}>english</button>
-    <button class="btn btn-primary" onClick={he}>עברית</button>
+    <button class="btn btn-primary m" onClick={en}>english</button>
+    <button class="btn btn-primary m" onClick={he}>עברית</button>
     </div>
-    </>
+    </div>
   );
 }
 export default App;
