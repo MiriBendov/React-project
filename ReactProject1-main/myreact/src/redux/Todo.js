@@ -1,21 +1,22 @@
-import { UseSelector,useDispatch, useSelector } from "react-redux";
-import { addToDo,removeToDo } from "./action";
+import { useSelector, useDispatch } from "react-redux";
+import { addToDo, removeToDo } from "./action";
 
-
-export default function Todo(){
-    const tasks=useSelector(state=>state.todo);
-    const dispatch=useDispatch();
-    return(
+export default function Todo() {
+    const tasks = useSelector(state => state.todo);
+    const dispatch = useDispatch();
+    
+    return (
         <>
-        <ul>
-             {
-                tasks.map((item,id)=>(
-                    <li>{item.name}</li>,
-                    <li>{item.id}</li>
+            {
+                tasks.map((item) => (
+                    <div key={item.id}> {/* הוספת key עבור הרשימה */}
+                        <p>{item.name}</p>
+                        <p>{item.id}</p>
+                        <button onClick={() => { dispatch(removeToDo(item.id)); }}>remove task</button> {/* כאן שים את item.id */}
+                    </div>
                 ))
-             }
-        </ul>
-        <button onClick={()=>{dispatch(removeToDo(id))}}>remove task</button>
+                
+            }
         </>
-    )
+    );
 }
