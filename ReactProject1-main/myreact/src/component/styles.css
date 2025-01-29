@@ -1,0 +1,43 @@
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #c0ded0ea; /* Light blue background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.task-item {
+    border: 1px solid #80deea; /* Light teal border */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffffff; /* White background for tasks */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #d4a39f; /* Soft red button color */
+    color: white; /* White text color for buttons */
+}
+
+button:hover {
+    background-color: #ff525239; /* Darker red on hover */
+    color: white;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #90ccd6; /* Light teal border for inputs */
+    border-radius: 4px;
+}

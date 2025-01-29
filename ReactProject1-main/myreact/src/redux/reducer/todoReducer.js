@@ -10,7 +10,7 @@ export const todoReducer=(state=initialState,action)=>{
         case ADDTODO:
             return{...state, todo: [...state.todo, action.payload]};
         case REMOVETODO:
-            const newarr=state.todo.filter(task =>{return task.id!==action.payload});
+            const newarr=state.todo.filter(task =>{return task.id!==action.payload.id});
             return{...state,todo:newarr};
         default:
             return state;

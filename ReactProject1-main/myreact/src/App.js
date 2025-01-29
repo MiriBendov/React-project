@@ -15,8 +15,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Provider } from 'react-redux';
-import Todo from './redux/Todo';
+import Todo from './component/Todo';
 import { store } from './redux/store';
+import  RecicleBin from './component/RecicleBin';
 
 // function App() {
 //   return (
@@ -77,6 +78,7 @@ function App(){
     <>
     <Provider store={store}>
       <Todo/>
+      <RecicleBin/>
     </Provider>
     </>
   );

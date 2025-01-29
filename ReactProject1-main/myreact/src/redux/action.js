@@ -1,10 +1,19 @@
-import { ADDTODO,REMOVETODO } from "./actionType"
+import { ADDTODO,REMOVETODO ,REMOVENEVER} from "./actionType"
 
 export const addToDo = (task) => ({
-    type: ADDTODO,payload:task,
+    type: ADDTODO,
+    payload:task,
 })
 
 
-export const removeToDo = (id) => ({
-    type: REMOVETODO,payload:id,
+export const removeToDo = (task) => ({
+    type: REMOVETODO,
+    payload:task,
 })
+
+export const removeNever = (task) => ({
+    type: REMOVENEVER,
+    payload:task,
+})
+
+
