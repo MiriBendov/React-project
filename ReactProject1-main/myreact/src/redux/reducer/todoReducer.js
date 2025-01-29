@@ -1,6 +1,7 @@
 import { ADDTODO,REMOVETODO } from "../actionType";
+
 const initialState={
-    todo:[{ id: 1, name: 'First Task' },],
+    todo:[],
 };
 
 
@@ -9,7 +10,8 @@ export const todoReducer=(state=initialState,action)=>{
         case ADDTODO:
             return{...state, todo: [...state.todo, action.payload]};
         case REMOVETODO:
-            return{...state,todo: state.todo.filter(task=>task!=action.payload)};
+            const newarr=state.todo.filter(task =>{return task.id!==action.payload});
+            return{...state,todo:newarr};
         default:
             return state;
     };
