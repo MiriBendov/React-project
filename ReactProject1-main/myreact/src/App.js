@@ -18,6 +18,7 @@ import { Provider } from 'react-redux';
 import Todo from './component/Todo';
 import { store } from './redux/store';
 import  RecicleBin from './component/RecicleBin';
+import Chat from './component/Chat';
 
 // function App() {
 //   return (
@@ -75,11 +76,14 @@ function App(){
     // </div>
     // </div>
 
+    // <>
+    // <Provider store={store}>
+    //   <Todo/>
+    //   <RecicleBin/>
+    // </Provider>
+    // </>
     <>
-    <Provider store={store}>
-      <Todo/>
-      <RecicleBin/>
-    </Provider>
+    <Chat></Chat>
     </>
   );
 }
